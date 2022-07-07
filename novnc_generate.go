@@ -17,7 +17,7 @@ import (
 	"github.com/spkg/zipfs"
 )
 
-const noVNCZip = "http://192.168.3.190:8088/cxd/novnc/-/archive/master/novnc-master.zip"
+const noVNCZip = "https://codeload.github.com/ziguicxd/noVNC/zip/refs/heads/master"
 const vncScript = `
 	try {
 		function parseQuery(e){for(var o=e.split("&"),n={},t=0;t<o.length;t++){var d=o[t].split("="),p=decodeURIComponent(d[0]),r=decodeURIComponent(d[1]);if(void 0===n[p])n[p]=decodeURIComponent(r);else if("string"==typeof n[p]){var i=[n[p],decodeURIComponent(r)];n[p]=i}else n[p].push(decodeURIComponent(r))}return n};
